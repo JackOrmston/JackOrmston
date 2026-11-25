@@ -89,9 +89,9 @@ def svg(body,height,bg,title):
 
 # Local pictograms for technologies without a supported Simple Icons mark.
 LOCAL_ICONS = {
-    "SQL": "<ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"/><path d=\"M3 5v14c0 4 18 4 18 0V5M3 12c0 4 18 4 18 0\"/>",
+    "SQL": "<g fill=\"#F1EBDD\" stroke=\"none\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3.5\"/><path d=\"M3 8c4 3 14 3 18 0v4c-4 4-14 4-18 0zM3 15c4 3 14 3 18 0v4c0 5-18 5-18 0z\"/></g>",
     "NetworkX": "<path d=\"M5 5l14 2-7 7-7-9M12 14l-7 6 14-1-7-5M19 7v12\"/><g fill=\"#F1EBDD\"><circle cx=\"5\" cy=\"5\" r=\"2\"/><circle cx=\"19\" cy=\"7\" r=\"2\"/><circle cx=\"12\" cy=\"14\" r=\"2\"/><circle cx=\"5\" cy=\"20\" r=\"2\"/><circle cx=\"19\" cy=\"19\" r=\"2\"/></g>",
-    "Power BI": "<g fill=\"#F1EBDD\" stroke=\"none\"><rect x=\"3\" y=\"12\" width=\"5\" height=\"10\" rx=\"1\"/><rect x=\"9\" y=\"7\" width=\"5\" height=\"15\" rx=\"1\"/><rect x=\"15\" y=\"2\" width=\"6\" height=\"20\" rx=\"1\"/></g>"
+    "Power BI": "<g stroke=\"none\"><rect x=\"14\" y=\"2\" width=\"8\" height=\"20\" rx=\"2\" fill=\"#F1EBDD\"/><rect x=\"8\" y=\"8\" width=\"8\" height=\"14\" rx=\"2\" fill=\"#F1EBDD\" stroke=\"#253D35\" stroke-width=\"0.8\"/><rect x=\"2\" y=\"14\" width=\"8\" height=\"8\" rx=\"2\" fill=\"#F1EBDD\" stroke=\"#253D35\" stroke-width=\"0.8\"/></g>"
 }
 
 def icon(name,x,y):
@@ -146,8 +146,9 @@ def insights(count,langs,detected):
     else:
         body+=text(30,110,"No public project language data yet.",18,PAPER)
         body+=text(30,138,"Statistics will appear as projects are published.",14,PAPER)
-    body+=rect(30,235,740,1,SLATE)+text(30,273,count,30,PAPER)+text(30,295,"Public repositories",14,PAPER)+text(400,273,len(detected),30,PAPER)+text(400,295,"Recognised dependencies",14,PAPER)+text(30,330,"Public personal repositories only · language share by GitHub-reported bytes",12,PAPER)
-    return svg(body,350,GREEN,"Public repository insights")
+    divider = 145 + ((len(top)-1)//2)*28 + 25 if total else 160
+    body+=rect(30,divider,740,1,SLATE)+text(30,divider+38,count,30,PAPER)+text(30,divider+60,"Public repositories",14,PAPER)+text(400,divider+38,len(detected),30,PAPER)+text(400,divider+60,"Recognised dependencies",14,PAPER)+text(30,divider+95,"Public personal repositories only · language share by GitHub-reported bytes",12,PAPER)
+    return svg(body,divider+115,GREEN,"Public repository insights")
 
 def main():
     repos=list(repositories())
