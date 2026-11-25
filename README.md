@@ -33,11 +33,9 @@ One of the more interesting challenges is resolving the different names, patrony
 
 Language shares use GitHub-reported source bytes, not proficiency or time spent. Statistics exclude private, forked, archived and profile repositories.
 
-## Certifications & professional development
+## Education & professional development
 
-| Programme | Provider | Status |
-| --- | --- | --- |
-| Google Analytics certificate | Google | In progress |
+![Education and certifications: MSc Big Data, University of Stirling, Merit; Google Analytics certificate, in progress](assets/education.svg)
 
 ## Beyond the code
 
