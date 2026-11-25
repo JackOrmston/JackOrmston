@@ -23,15 +23,15 @@ One of the more interesting challenges is resolving the different names, patrony
 | Literary Character Network Intelligence (in development) | NLP, entity resolution and graph analytics |
 | Customer retention research (MSc dissertation) | Feature engineering, classification and model evaluation |
 
-## Tools and interests
+## Technical toolkit
 
-| Area | Technologies and methods |
-| --- | --- |
-| Data science | Python, pandas, NumPy, scikit-learn, statistics |
-| Analytics | SQL, Power BI, exploratory analysis, data visualisation |
-| Applied AI | NLP, spaCy, retrieval-augmented generation, embeddings |
-| Data engineering | Relational databases, MongoDB, data modelling |
-| Development and deployment | Git, pytest, FastAPI, Google Cloud |
+![Curated languages and technologies](assets/stats/technologies.svg)
+
+## Repository insights
+
+![Public repository language distribution and recognised dependencies](assets/stats/languages.svg)
+
+Language shares use GitHub-reported source bytes, not proficiency or time spent. Statistics exclude private, forked, archived and profile repositories.
 
 ## Beyond the code
 
