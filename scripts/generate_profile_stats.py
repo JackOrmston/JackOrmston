@@ -87,7 +87,16 @@ def rect(x,y,w,h,fill,rx=0):
 def svg(body,height,bg,title):
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="800" height="{height}" viewBox="0 0 800 {height}"><title>{html.escape(title)}</title>{rect(0,0,800,height,bg,6)}{body}</svg>\n'
 
+# Local pictograms for technologies without a supported Simple Icons mark.
+LOCAL_ICONS = {
+    "SQL": "<ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"/><path d=\"M3 5v14c0 4 18 4 18 0V5M3 12c0 4 18 4 18 0\"/>",
+    "NetworkX": "<path d=\"M5 5l14 2-7 7-7-9M12 14l-7 6 14-1-7-5M19 7v12\"/><g fill=\"#F1EBDD\"><circle cx=\"5\" cy=\"5\" r=\"2\"/><circle cx=\"19\" cy=\"7\" r=\"2\"/><circle cx=\"12\" cy=\"14\" r=\"2\"/><circle cx=\"5\" cy=\"20\" r=\"2\"/><circle cx=\"19\" cy=\"19\" r=\"2\"/></g>",
+    "Power BI": "<g fill=\"#F1EBDD\" stroke=\"none\"><rect x=\"3\" y=\"12\" width=\"5\" height=\"10\" rx=\"1\"/><rect x=\"9\" y=\"7\" width=\"5\" height=\"15\" rx=\"1\"/><rect x=\"15\" y=\"2\" width=\"6\" height=\"20\" rx=\"1\"/></g>"
+}
+
 def icon(name,x,y):
+    if name in LOCAL_ICONS:
+        return f'<g transform="translate({x},{y}) scale(1.2)" fill="none" stroke="#F1EBDD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{LOCAL_ICONS[name]}</g>'
     slug = CONFIG["icons"].get(name)
     if slug:
         try:
