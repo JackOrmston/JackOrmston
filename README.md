@@ -25,13 +25,19 @@ One of the more interesting challenges is resolving the different names, patrony
 
 ## Technical toolkit
 
-![Curated languages and technologies](assets/stats/technologies.svg)
+![Curated languages and technologies](assets/stats/technologies.svg?v=3)
 
 ## Repository insights
 
-![Public repository language distribution and recognised dependencies](assets/stats/languages.svg)
+![Public repository language distribution and recognised dependencies](assets/stats/languages.svg?v=3)
 
 Language shares use GitHub-reported source bytes, not proficiency or time spent. Statistics exclude private, forked, archived and profile repositories.
+
+## Certifications & professional development
+
+| Programme | Provider | Status |
+| --- | --- | --- |
+| Google Analytics certificate | Google | In progress |
 
 ## Beyond the code
 
