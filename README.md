@@ -21,7 +21,6 @@ One of the more interesting challenges is resolving the different names, patrony
 | Project | Focus |
 | --- | --- |
 | Literary Character Network Intelligence (in development) | NLP, entity resolution and graph analytics |
-| [Scotch Whisky Recommender](https://github.com/JackOrmston/scotch-whisky-recommender) | Recommendation systems |
 | Customer retention research (MSc dissertation) | Feature engineering, classification and model evaluation |
 
 ## Tools and interests
