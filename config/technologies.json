@@ -1,0 +1,66 @@
+{
+  "groups": {
+    "Languages & databases": [
+      "Python",
+      "SQL",
+      "MySQL",
+      "MongoDB"
+    ],
+    "Machine learning & applied AI": [
+      "scikit-learn",
+      "TensorFlow",
+      "spaCy",
+      "NetworkX"
+    ],
+    "Analytics & visualisation": [
+      "pandas",
+      "Power BI",
+      "Plotly",
+      "Streamlit"
+    ],
+    "Engineering & infrastructure": [
+      "Google Cloud",
+      "FastAPI",
+      "Git",
+      "pytest"
+    ]
+  },
+  "icons": {
+    "Python": "python",
+    "MySQL": "mysql",
+    "MongoDB": "mongodb",
+    "scikit-learn": "scikitlearn",
+    "TensorFlow": "tensorflow",
+    "spaCy": "spacy",
+    "NetworkX": "networkx",
+    "pandas": "pandas",
+    "Plotly": "plotly",
+    "Streamlit": "streamlit",
+    "Google Cloud": "googlecloud",
+    "FastAPI": "fastapi",
+    "Git": "git",
+    "pytest": "pytest"
+  },
+  "dependencies": {
+    "scikit-learn": "scikit-learn",
+    "tensorflow": "TensorFlow",
+    "spacy": "spaCy",
+    "networkx": "NetworkX",
+    "pandas": "pandas",
+    "plotly": "Plotly",
+    "streamlit": "Streamlit",
+    "fastapi": "FastAPI",
+    "pytest": "pytest",
+    "pymongo": "MongoDB",
+    "mysql-connector-python": "MySQL",
+    "google-cloud-aiplatform": "Google Cloud",
+    "numpy": "NumPy",
+    "torch": "PyTorch",
+    "matplotlib": "Matplotlib",
+    "polars": "Polars",
+    "duckdb": "DuckDB",
+    "sqlalchemy": "SQLAlchemy",
+    "xgboost": "XGBoost",
+    "catboost": "CatBoost"
+  }
+}
