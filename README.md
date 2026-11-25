@@ -35,7 +35,7 @@ Language shares use GitHub-reported source bytes, not proficiency or time spent.
 
 ## Education & professional development
 
-![Education and certifications: MSc Big Data, University of Stirling, Merit; Google Analytics certificate, in progress](assets/education.svg)
+![Education and certifications: MSc Big Data, University of Stirling, Merit; modules: Commercial and Scientific Applications; Statistics with R; Personal & Professional Development; Relational and non-Relational Databases; Mathematical Foundations; Machine Learning; Representing and Manipulating Data; Cloud Computing; Dissertation Project; Google Analytics certificate, in progress](assets/education.svg?v=2)
 
 ## Beyond the code
 
